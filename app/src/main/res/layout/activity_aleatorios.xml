@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityAleatorios"
+    android:weightSum="1"
+    android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="GENEREADOR DE ALEATORIOS"
+            android:textSize="25sp">
+
+        </TextView>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:weightSum="1"
+            android:id="@+id/grupoRadios"
+            android:layout_marginLeft="10dp">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:textSize="20sp"
+                android:text="Sin rango específico"
+                android:id="@+id/sinRango"
+                android:checked="true">
+            </RadioButton>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:textSize="20sp"
+                android:text="Con rasgo específico"
+                android:id="@+id/conRango">
+            </RadioButton>
+        </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:layout_marginLeft="10dp">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:hint="mínimo"
+            android:inputType="number"
+            android:id="@+id/numeroMinimo">
+        </EditText>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="máximo"
+            android:inputType="number"
+            android:id="@+id/numeroMaximo">
+        </EditText>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:text="Permitir decimales"
+            android:textSize="15sp"
+            android:id="@+id/permitirDecimales"
+            >
+        </CheckBox>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:hint="Número de Decimales"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:id="@+id/numeroDecimales">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:weightSum="1"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:hint="Cuantos quieres generar"
+            android:textSize="15sp"
+            android:gravity="center">
+        </TextView>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="match_parent"
+            android:hint="Números totales"
+            android:inputType="number"
+            android:textSize="15sp"
+            android:id="@+id/numeroTotales">
+        </EditText>
+    </LinearLayout>
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="15sp"
+        android:id="@+id/switchRepetirNumeros"
+        android:text="Repetir números"
+        style="@style/SwitchPerso">
+
+    </Switch>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/startup"
+        android:layout_gravity="center"
+        android:id="@+id/btnCohete"
+        style="@style/Widget.AppCompat.Button.Borderless">
+
+    </ImageButton>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/etiqueta">
+
+    </TextView>
+</LinearLayout>
+
